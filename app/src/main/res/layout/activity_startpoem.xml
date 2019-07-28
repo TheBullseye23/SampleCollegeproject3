@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startpoem">
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv1-title"
+        android:layout_width="171dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="1dp"
+        android:text="Title of your poem" />
+
+    <EditText
+        android:id="@+id/newpoemtitle"
+        android:layout_width="340dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/tv1-title"
+        android:text=""
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-2dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv1-startpoem"
+        android:layout_width="301dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/newpoemtitle"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:text="Start your poem with the first 2 sentences"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/NewPoemLines"
+        android:layout_width="305dp"
+        android:layout_height="124dp"
+        android:text=""
+        android:layout_below="@+id/tv1-startpoem"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:maxLines="2" />
+
+    <TextView
+        android:id="@+id/tv1-coupletno"
+        android:layout_width="301dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/NewPoemLines"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="59dp"
+        android:text="How many couplets would you like to have?" />
+
+    <NumberPicker
+        android:id="@+id/np1"
+        android:layout_width="146dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/tv1-coupletno"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginBottom="8dp">
+
+    </NumberPicker>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/np1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:onClick="CreatePoem"
+        android:text="Create Poem!" />
+
+       </RelativeLayout>
+   </ScrollView>
+
+</RelativeLayout>

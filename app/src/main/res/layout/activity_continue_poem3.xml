@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContinuePoem3">
+
+    <ScrollView
+        android:id="@+id/CP3ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+             android:id="@+id/CP3poemdisplay"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:textStyle="italic"
+             android:text=""/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <EditText
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/CP3ScrollView"
+        android:id="@+id/CP3addedlines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/AddPoem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to poem"
+        android:onClick="Addlines"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

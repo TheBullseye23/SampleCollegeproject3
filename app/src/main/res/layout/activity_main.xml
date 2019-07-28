@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="40dp"
+        android:background="#DD2C00"
+        android:onClick="SIGNOut"
+        android:text="SignOuT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="126"
+        tools:layout_conversion_wrapWidth="231" />
+
+    <Button
+        android:id="@+id/btn_startpoem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="68dp"
+        android:onClick="gotoStart"
+        android:text="Start a Poem!"
+        app:layout_constraintBottom_toTopOf="@+id/btn_continuepoem"
+        app:layout_constraintEnd_toEndOf="@+id/btn_continuepoem" />
+
+    <Button
+        android:id="@+id/btn_continuepoem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="gotocontinue"
+        android:text="Continue a poem"
+        app:layout_constraintBottom_toTopOf="@+id/btn_readpoem"
+        app:layout_constraintStart_toStartOf="@+id/btn_readpoem" />
+
+    <Button
+        android:id="@+id/btn_readpoem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="gotoread"
+        android:text="Read some amazing poems!"
+        app:layout_constraintBottom_toTopOf="@+id/btn_userpoems"
+        app:layout_constraintEnd_toEndOf="@+id/btn_userpoems" />
+
+    <Button
+        android:id="@+id/btn_userpoems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="189dp"
+        android:onClick="gotouserpoem"
+        android:text="Poems you have participated in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
